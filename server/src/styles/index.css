@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, blue, pink);
+}
+
+
+header{
+    width: 100%;
+    height: 10%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: bisque;
+}
+h1{
+    font-size: clamp(14px, 4cqi, 40px);
+}
+img{
+    border-radius: 10px;
+    width: clamp(40px, 20cqi, 60px);
+}
+.logoWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: clamp(100px, 30cqw, 350px);
+}
+.container{
+    max-height: 83%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+.mainSec{
+    /* border: 1px solid black; */
+    padding: 7px;
+    background: linear-gradient(to bottom left, blue, pink );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titel-wrapper{
+    width: 100%;
+    height: 7%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titel-wrapper input{
+    flex-grow: 0.98;
+    height: 80%;
+    font-size: clamp(14px, 1.5cqi, 16px);
+    padding-left: clamp(10px, 15px, 20px);
+    border-radius: 10px;
+}
+.titel-wrapper button{
+    width: 10%;
+    height: 85%;
+    font-size: clamp(14px, 1.5cqi, 16px);
+}
+.titel-wrapper button:hover{
+    cursor: pointer;
+}
+textarea{
+    width: calc(100% - 10px);
+    flex-grow: .98;
+    resize: none;
+    padding: 5px;
+    font-size: clamp(14px, 1.5cqi, 18px);
+    border-radius: 10px;
+}
+
+.titel-btn{
+    border-radius: 10px;
+}
+.updBtn{
+    display: none;
+    border-radius: 5px;
+}
+
+
+.sideBar{
+    background: linear-gradient(to bottom left, blue, pink );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+.sideBar p{
+    margin: 5px 0;
+    font-size: clamp(14px, 2cqi, 20px);
+    border: 1px solid black;
+    width: clamp(20px, 20cqw, 200px);
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    transition: .4s;
+    border-radius: 10px;
+}
+.sideBar p:hover{
+    cursor: pointer;
+    /* text-decoration: underline; */
+    box-shadow: 4px 4px 4px black;
+    background-color: bisque;
+}
+
+
+footer{
+    width: 100%;
+    height: 7%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    color: white;
+    letter-spacing:5px;
+}
+footer a:hover{
+    color: aqua;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    cursor:grab;
+    background: grey; 
+}
